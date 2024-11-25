@@ -8,3 +8,5 @@ Cores: https://color.adobe.com/pt/
 Fontes: https://fonts.google.com/
 
 Imagens: https://unsplash.com/pt-br, https://br.freepik.com/
+
+Extensão: Live Server

@@ -1,0 +1,9 @@
+/* Elementos do header */
+@media screen and (max-width: 1200px) {
+	header {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../images/headerCapaM.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+}
