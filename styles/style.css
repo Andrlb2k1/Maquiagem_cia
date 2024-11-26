@@ -1,3 +1,24 @@
+/*
+CORES
+#D92B04
+#45858C
+#A0D9D9
+#D9C589
+#BF9765
+
+#8C1C3A
+#BF244E
+#F2A88D
+#D9765F
+#BF8821
+
+font-family: 'Caveat', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Marhey', cursive;
+font-family: 'Mynerve', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
 * {
 	padding: 0;
 	margin: 0;
@@ -18,6 +39,29 @@ h2 {
 	font-size: max(20px, 2.8vw);
 }
 
+/* Botão para chamada */
+div.chamada a {
+    font-size: max(16px, 1.8vw);
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(rgba(217, 197, 137, 1) 0%, rgba(140, 28, 58, 1)50%, rgba(140, 28, 58, 1)100%);
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
+}
+
+div.chamada a:hover {
+    opacity: .8;
+}
+
 /* Elementos do header */
 header {
 	max-width: 100%;
@@ -27,6 +71,16 @@ header {
 	background-position: center center;
 	background-size: cover;
 	position: relative;
+}
+
+/* Navbar */
+header nav#nav-esquerda {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	/* justify-content: space-between; */
 }
 
 header nav#nav-esquerda div#logo {
@@ -79,4 +133,34 @@ header nav#nav-esquerda ul.menu-principal li a {
 header nav#nav-esquerda ul.menu-principal li a:hover {
 	opacity: .6;
 	border-bottom: 1px solid #fff;
+}
+
+/* Chamada */
+header div.chamada {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+header div.chamada h1 {
+	color: #fff;
+	
+	animation-name: HeaderH1-moverParaDireita;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+header div.chamada h2 {
+	color: #D9C589;
+	margin-bottom: 55px;
+
+	animation-name: HeaderH1-moverParaEsquerda;
+	animation-duration: 1.5s;
+	animation-delay: 0.5s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
 }
