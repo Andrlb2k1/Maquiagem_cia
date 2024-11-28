@@ -25,6 +25,10 @@ font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 h1 {
 	font-family: 'Mynerve', cursive;
 	text-shadow: 4px 4px 6px #000;
@@ -270,4 +274,94 @@ section.makes div.makes-container {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
+}
+
+/* Elementos do footer */
+footer {
+	width: 100%;
+	background-color: #5c451b;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer div.footer-container {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+footer div.footer-container div.logo-footer {
+	width: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+
+footer div.footer-container div.logo-footer img {
+	max-width: 100%;
+}
+
+footer div.footer-container div.footer-info {
+	width: 70%;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul.menu-principal {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul.menu-principal li {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul.menu-principal li a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 110%;
+	transition: .3s ease-out;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul.menu-principal li a:hover {
+	border: 2px solid #D9C589;
+}
+
+footer div.footer-container div.footer-info div.cartoes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer div.footer-container div.footer-info div.cartoes span {
+	font-family: 'Roboto', sans-serif;
+	color: #FFF;
+	font-size: max(16px, 1.5vw);
+	margin-top: 15px;
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes {
+	max-width: 340px;
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes img {
+	max-width: 100%;
+}
+
+footer span.autorais {
+	color: #FFF;
+	font-size: max(14px, .8vw);
+	margin-top: 20px;
 }
